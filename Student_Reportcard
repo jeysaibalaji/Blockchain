@@ -1,0 +1,36 @@
+pragma solidity ^0.4.21 <0.6.21;
+
+
+contract marklist{
+     
+     string public NAME;
+     uint public ROLLNUMBER;
+     int public BatchNO;
+     uint public ENGLISH;
+     uint public SCIENCE;
+     uint public SOCIAL;
+     uint public MATHS;
+     string public Status;
+     
+     
+     function marklist(string Name,uint RollNumber,int Batch,uint English,uint Science,uint Social,uint maths,string Result) public{
+    
+   NAME = Name;
+   ROLLNUMBER= RollNumber;
+   BatchNO= Batch;
+   ENGLISH = English;
+   SCIENCE= Science;
+    SOCIAL= Social;
+    MATHS= maths;
+    Status= Result;
+    
+    }
+     
+     function GetstudentDetails()public view returns(string,uint,int,uint,uint,uint,uint,string){
+         return(NAME,ROLLNUMBER,BatchNO,ENGLISH,SCIENCE,SOCIAL,MATHS,Status);
+     }
+     
+}
+
+
+0xFc16F0f838e25daE8a9CD7Dc2BF27df349341299
